@@ -241,14 +241,14 @@ section{
 
 
 #banner{
-	background-color: #000;
+	
 
 }
 #banner .banner-home{
 	width: 100%;
 	height: auto;
 	display: block;
-	opacity: 0.8;
+	
 }
 
 #banner .container{
