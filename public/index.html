@@ -11,6 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
   <script src="https://kit.fontawesome.com/96b0701036.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,7 +27,7 @@
       <nav class="menu">
         <a href="index.html#servicio">servicio</a>
         <a href="index.html#flores">Flores</a>
-        <a href="nosotros.htm">nosotros</a>
+        <a href="nosotros.html">nosotros</a>
         <a href="contacto.html">contacto</a>
       </nav>
       <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
@@ -40,8 +43,27 @@
             <h1>Bienvenido a Corcaraño</h1>
             <p>te afrecemos los mejores servicos de ecoturismo</p>
             <a href="#servicio" class="btn boton-transpa">ver servico</a>
-          </div>
-        </div>
+            
+            
+            <div class="login">
+              <div class="row">
+                <div class="col-md-4"></div>
+                  <div class="col-md-4">
+                      <label for="">Correo</label>
+                      <input id="emailUser" class="form-control" type="email" placeholder="Digite Correo">
+                      <label class="mt-3" for="">Contraseña</label>
+                      <input id="passUser" class="form-control" type="password">
+
+                      <a onclick="registrarUsuario()" class="btn btn-success mt-4">Registrate!!!!</a>
+                      <a onclick="login()" class="btn btn-primary mt-4">Iniciar Sesión</a>
+                  </div>
+                    <div class="col-md-4"></div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
       </div>
     </section>
 
@@ -257,7 +279,29 @@
     </div>
   </footer>
 
+
+  
+  
+  <!--Js, Popper, and jQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+
+  <!--firebase-->
+  
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="app.js"></script>
+ 
+
 </body>
 
 </html>
